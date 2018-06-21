@@ -7,6 +7,18 @@ public class PauseMenuScript : MonoBehaviour
 {
     public GameObject pauseMenuUI;
 
+    Scene curScene;
+
+    private void Start()
+    {
+        curScene = SceneManager.GetActiveScene();
+    }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(curScene.name);
+    }
+
     public void PauseAndResume()
     {
         if(Time.timeScale == 1f)
