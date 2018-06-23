@@ -7,11 +7,12 @@ public class LockPickGameRotate : MonoBehaviour
     public GameObject wrenchPivot;
     public bool isPick;
     public bool isWrench;
-    //public Transform objectToBeRotated;
+
+    public static bool resetPickPos = false;
 
     void Update()
     {
-        
+        //For one touch
         if (Input.touchCount == 1)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
@@ -19,7 +20,6 @@ public class LockPickGameRotate : MonoBehaviour
             Debug.DrawRay(ray.origin, ray.direction * 10, Color.green);
             if (Physics.Raycast(ray, out Hit))
             {
-                Debug.Log("Shit is happening");
                 if (Hit.collider.GetComponent<LockPickGameRotate>() != null)
                 {
                     if(Hit.collider.GetComponent<LockPickGameRotate>().isPick == true)
@@ -28,10 +28,26 @@ public class LockPickGameRotate : MonoBehaviour
                     }
                     if(Hit.collider.GetComponent<LockPickGameRotate>().isWrench == true)
                     {
-                        wrenchPivot.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.x, Space.World);
+                        if(LockPickShake.isInCorrectArea == true)
+                        {
+                            wrenchPivot.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.x, Space.World);
+                        }
+                        else
+                        {
+                            LockPickShake.startShaking = true;
+                            /*
+                            if(this.GetComponent<LockPickShake>() != null)
+                            {
+                                this.GetComponent<LockPickShake>().Shake();
+                            }
+                            else
+                            {
+                                return;
+                            }*/
+                        }
+                        
                     }
-                   //objectToBeRotated.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.x, Space.World);
-                   //objectToBeRotated.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.y, Space.World);
+                   
                 }
                 else
                 {
@@ -42,7 +58,7 @@ public class LockPickGameRotate : MonoBehaviour
 
         }
 
-        
+        //For 2 touches
         if (Input.touchCount == 2)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
@@ -52,24 +68,27 @@ public class LockPickGameRotate : MonoBehaviour
             Debug.DrawRay(ray.origin, ray.direction * 10, Color.green);
             Debug.DrawRay(ray2.origin, ray2.direction * 10, Color.blue);
 
-
+            //1st touch
             if (Physics.Raycast(ray, out Hit))
             {
-                Debug.Log("Shit is happening");
                 if (Hit.collider.GetComponent<LockPickGameRotate>() != null)
                 {
                     if (Hit.collider.GetComponent<LockPickGameRotate>().isPick == true)
                     {
-                        Debug.Log("Tatering");
                         pickPivot.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.x, Space.World);
                     }
                     if (Hit.collider.GetComponent<LockPickGameRotate>().isWrench == true)
                     {
-                        Debug.Log("Tatering");
-                        wrenchPivot.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.x, Space.World);
+                        if (LockPickShake.isInCorrectArea == true)
+                        {
+                            wrenchPivot.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.x, Space.World);
+                        }
+                        else
+                        {
+                            LockPickShake.startShaking = true;
+                        }
                     }
-                    //objectToBeRotated.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.x, Space.World);
-                    //objectToBeRotated.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.y, Space.World);
+                    
                 }
                 else
                 {
@@ -77,24 +96,27 @@ public class LockPickGameRotate : MonoBehaviour
                 }
 
             }
-
+            //2nd touch
             if (Physics.Raycast(ray2, out Hit2))
             {
-                Debug.Log("Shit is happening2");
                 if (Hit2.collider.GetComponent<LockPickGameRotate>() != null)
                 {
                     if (Hit2.collider.GetComponent<LockPickGameRotate>().isPick == true)
                     {
-                        Debug.Log("Tatering2");
-                        pickPivot.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.x, Space.World);
+                        pickPivot.transform.Rotate(0f, 0f, Input.GetTouch(1).deltaPosition.x, Space.World);
                     }
                     if (Hit2.collider.GetComponent<LockPickGameRotate>().isWrench == true)
                     {
-                        Debug.Log("Tatering2");
-                        wrenchPivot.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.x, Space.World);
+                        if (LockPickShake.isInCorrectArea == true)
+                        {
+                            wrenchPivot.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.x, Space.World);
+                        }
+                        else
+                        {
+                            LockPickShake.startShaking = true;
+                        }
                     }
-                    //objectToBeRotated.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.x, Space.World);
-                    //objectToBeRotated.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.y, Space.World);
+                    
                 }
                 else
                 {
@@ -104,6 +126,16 @@ public class LockPickGameRotate : MonoBehaviour
             }
 
         }
-        
+
+        //0 touches
+        if (Input.touchCount == 0)
+        {
+            if(LockPickShake.startShaking == true)
+            {
+                LockPickShake.startShaking = false;
+                resetPickPos = true;
+                
+            }
+        }
     }
 }

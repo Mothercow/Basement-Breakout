@@ -5,25 +5,70 @@ using UnityEngine;
 public class LockPickShake : MonoBehaviour
 {
     public GameObject lockPick;
-    public Transform lockPickPivot;
+    public GameObject lockPickPivotRot;
+    public GameObject wrenchPivot;
 
-    Transform tempLockPickPos;
-    float speed = 1.0f; //how fast it shakes
-    float amount = 1.0f; //how much it shakes
+    public static bool startShaking = false;
+    public static bool isInCorrectArea = false;
+
+    private Vector3 startPos;
+
+    Vector3 pickObjectRot;
+    float tempRot;
+    float tempWrenchRot;
+    float speed = 1f;
+    float amount = 1f;
 
     private void Start()
     {
-        tempLockPickPos.position = lockPick.transform.position;
+        startPos = lockPick.transform.localRotation.eulerAngles;
+        pickObjectRot = lockPick.transform.localRotation.eulerAngles;
     }
 
-    // Update is called once per frame
     void Update ()
     {
-        if(lockPickPivot.rotation.y > 0 || lockPickPivot.rotation.y < 30 )
+        tempRot = lockPickPivotRot.GetComponent<AngleClamp>().currentRotation.y;
+        tempWrenchRot = wrenchPivot.GetComponent<AngleClamp>().currentRotation.y;
+        Debug.Log(isInCorrectArea);
+        Debug.Log(startShaking);
+        Debug.Log(startPos);
+
+        if (tempRot > 45 && tempRot < 90 )
         {
-            //tempLockPickPos.position.x = Mathf.Sin(Time.time * speed) * amount;
+            isInCorrectArea = true;
+        }
+        else
+        {
+            isInCorrectArea = false;
         }
 
-       //transform.position.x = Mathf.Sin(Time.time * speed) * amount;
+        if (tempWrenchRot > 80 && tempWrenchRot <90)
+        {
+            Debug.Log("Unlocked");
+        }
+
+        if(startShaking == true)
+        {
+            Shake();
+        }
+        
+        if(LockPickGameRotate.resetPickPos == true)
+        {
+            StopShake();
+            Debug.Log("Stopping shake");
+            LockPickGameRotate.resetPickPos = false;
+        }
+
+    }
+
+    public void Shake()
+    {
+        pickObjectRot.y += 10f;
+        lockPick.transform.localRotation = Quaternion.Euler(pickObjectRot);
+    }
+
+    public void StopShake()
+    {
+        lockPick.transform.localRotation = Quaternion.Euler(startPos);
     }
 }

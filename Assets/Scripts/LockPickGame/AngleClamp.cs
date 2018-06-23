@@ -7,11 +7,11 @@ public class AngleClamp : MonoBehaviour
     public float minRotation;
     public float maxRotation;
 
-    Vector3 currentRotation;
+    public Vector3 currentRotation;
 
     private void Update()
     {
-        
+        //Debug.Log(currentRotation.y);
         currentRotation = transform.localRotation.eulerAngles;
         AngleLimits();
         transform.localRotation = Quaternion.Euler(currentRotation);
