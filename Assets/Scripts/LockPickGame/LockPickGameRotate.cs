@@ -30,7 +30,9 @@ public class LockPickGameRotate : MonoBehaviour
                     {
                         if(LockPickShake.isInCorrectArea == true)
                         {
-                            wrenchPivot.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.x, Space.World);
+                            //Debug.Log("Rotating Wrench");
+                            wrenchPivot.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.x*-1f, Space.World);
+                            wrenchPivot.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.y*-1f, Space.World);
                         }
                         else
                         {
@@ -81,7 +83,8 @@ public class LockPickGameRotate : MonoBehaviour
                     {
                         if (LockPickShake.isInCorrectArea == true)
                         {
-                            wrenchPivot.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.x, Space.World);
+                            wrenchPivot.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.x * -1f, Space.World);
+                            wrenchPivot.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.y * -1f, Space.World);
                         }
                         else
                         {
@@ -109,7 +112,8 @@ public class LockPickGameRotate : MonoBehaviour
                     {
                         if (LockPickShake.isInCorrectArea == true)
                         {
-                            wrenchPivot.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.x, Space.World);
+                            wrenchPivot.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.x * -1f, Space.World);
+                            wrenchPivot.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.y * -1f, Space.World);
                         }
                         else
                         {
