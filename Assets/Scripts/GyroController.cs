@@ -90,7 +90,7 @@ public class GyroController : MonoBehaviour {
     {
         cameraContainer.transform.Rotate(0, -Input.gyro.rotationRateUnbiased.y, 0);
         this.transform.Rotate(-Input.gyro.rotationRateUnbiased.x, 0, 0);
-
+/*
         if (Input.touchCount > 0)
         {
             if (Input.GetTouch(0).phase == TouchPhase.Began)
@@ -107,7 +107,7 @@ public class GyroController : MonoBehaviour {
                 // yAngle = yAngleTemp + (SecondPoint.y - FirstPoint.y) * 90 / Screen.height;
                 cameraContainer.transform.Rotate(0.0f, Input.GetTouch(0).deltaPosition.x, 0.0f);
             }
-        }
+        }*/
 
     }
     public void Reset()
