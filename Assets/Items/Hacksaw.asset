@@ -16,6 +16,6 @@ MonoBehaviour:
   inspectGameObject: {fileID: 1182904092283170, guid: 2e94db16ac3b54f4cbbf8680dad14e91,
     type: 2}
   isDefaultItem: 0
-  distance: 20
+  distance: 1
   itemIndex: 0
   hasSelectedItem: 0

@@ -25,8 +25,19 @@ public class ItemPickup : Interactable
 
         if(wasPickedUp)
         {
-            meshRenderer.enabled = false;
-            boxCollider.enabled = false;
+            if(this.gameObject.tag == "MultipleObjects" )
+            {
+                foreach (Transform child in transform)
+                {
+                    child.GetComponent<MeshRenderer>().enabled = false;
+                }
+            }
+            else
+            {
+                meshRenderer.enabled = false;
+                boxCollider.enabled = false;
+            }
+            
         }
         
 
