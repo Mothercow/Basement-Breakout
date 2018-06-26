@@ -3,11 +3,18 @@
 public class ItemPickup : Interactable
 {
     public Item item;
+    MeshRenderer meshRenderer;
+    BoxCollider boxCollider;
+
+    private void Start()
+    {
+        meshRenderer = this.gameObject.GetComponent<MeshRenderer>();
+        boxCollider = this.gameObject.GetComponent<BoxCollider>();
+    }
 
     public override void Interact()
     {
         Debug.Log("Item pickup is happening");
-        GetComponent<DialogueTrigger>().TriggerDialogue();
         PickUp();
     }
 
@@ -18,8 +25,8 @@ public class ItemPickup : Interactable
 
         if(wasPickedUp)
         {
-            
-           Destroy(gameObject);
+            meshRenderer.enabled = false;
+            boxCollider.enabled = false;
         }
         
 

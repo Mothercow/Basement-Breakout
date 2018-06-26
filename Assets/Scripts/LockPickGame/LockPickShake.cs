@@ -42,7 +42,7 @@ public class LockPickShake : MonoBehaviour
             isInCorrectArea = false;
         }
 
-        if (tempWrenchRot > 80 && tempWrenchRot <90)
+        if (tempWrenchRot > 90 && tempWrenchRot < 100)
         {
             Debug.Log("Unlocked");
         }
@@ -63,7 +63,6 @@ public class LockPickShake : MonoBehaviour
 
     public void Shake()
     {
-        pickObjectRot.y += 10f;
         lockPick.transform.localRotation = Quaternion.Euler(pickObjectRot);
     }
 
