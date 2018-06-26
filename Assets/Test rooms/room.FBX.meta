@@ -1,0 +1,535 @@
+fileFormatVersion: 2
+guid: febdbb2f2ef30c948b2b656a18dc97a4
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: ' 1'
+    100002: Box001
+    100004: Box003
+    100006: Box004
+    100008: Box005
+    100010: Box006
+    100012: Box007
+    100014: Box008
+    100016: Box009
+    100018: Box010
+    100020: Box010 1
+    100022: Box011
+    100024: Box011 1
+    100026: Box012
+    100028: Box012 1
+    100030: Box013
+    100032: Box013 1
+    100034: Box014
+    100036: Box016
+    100038: Box019
+    100040: Box023
+    100042: Box026
+    100044: Box027
+    100046: Box028
+    100048: Box029
+    100050: Box030
+    100052: Box031
+    100054: Box032
+    100056: Box033
+    100058: Box034
+    100060: Box035
+    100062: Box036
+    100064: Box037
+    100066: closet_door_003
+    100068: closet_door_02
+    100070: closet_main001
+    100072: Cylinder001
+    100074: Cylinder001 1
+    100076: Cylinder002
+    100078: Cylinder003
+    100080: Cylinder004
+    100082: Cylinder005
+    100084: Cylinder005 1
+    100086: Cylinder006
+    100088: Cylinder011
+    100090: Cylinder012
+    100092: Cylinder013
+    100094: Cylinder014
+    100096: Cylinder015
+    100098: Cylinder016
+    100100: Cylinder017
+    100102: Cylinder018
+    100104: Cylinder019
+    100106: Cylinder020
+    100108: Cylinder021
+    100110: door003
+    100112: drawer
+    100114: glass
+    100116: glass cupboard
+    100118: Group001
+    100120: hacksaw
+    100122: Magnifying glass
+    100124: Object001
+    100126: Object002
+    100128: Object003
+    100130: Object004
+    100132: Object007
+    100134: Object007 1
+    100136: Object008
+    100138: Object008 1
+    100140: Object009
+    100142: Object009 1
+    100144: Object010
+    100146: Object010 1
+    100148: Object011
+    100150: Object011 1
+    100152: Object012
+    100154: Object013
+    100156: Object014
+    100158: Object015
+    100160: Object030
+    100162: overall table
+    100164: pipe piece
+    100166: pipeline
+    100168: pipeline001
+    100170: Plane002
+    100172: Plane003
+    100174: Plane003 1
+    100176: removable pipe
+    100178: //RootNode
+    100180: room_floor
+    100182: table
+    400000: ' 1'
+    400002: Box001
+    400004: Box003
+    400006: Box004
+    400008: Box005
+    400010: Box006
+    400012: Box007
+    400014: Box008
+    400016: Box009
+    400018: Box010
+    400020: Box010 1
+    400022: Box011
+    400024: Box011 1
+    400026: Box012
+    400028: Box012 1
+    400030: Box013
+    400032: Box013 1
+    400034: Box014
+    400036: Box016
+    400038: Box019
+    400040: Box023
+    400042: Box026
+    400044: Box027
+    400046: Box028
+    400048: Box029
+    400050: Box030
+    400052: Box031
+    400054: Box032
+    400056: Box033
+    400058: Box034
+    400060: Box035
+    400062: Box036
+    400064: Box037
+    400066: closet_door_003
+    400068: closet_door_02
+    400070: closet_main001
+    400072: Cylinder001
+    400074: Cylinder001 1
+    400076: Cylinder002
+    400078: Cylinder003
+    400080: Cylinder004
+    400082: Cylinder005
+    400084: Cylinder005 1
+    400086: Cylinder006
+    400088: Cylinder011
+    400090: Cylinder012
+    400092: Cylinder013
+    400094: Cylinder014
+    400096: Cylinder015
+    400098: Cylinder016
+    400100: Cylinder017
+    400102: Cylinder018
+    400104: Cylinder019
+    400106: Cylinder020
+    400108: Cylinder021
+    400110: door003
+    400112: drawer
+    400114: glass
+    400116: glass cupboard
+    400118: Group001
+    400120: hacksaw
+    400122: Magnifying glass
+    400124: Object001
+    400126: Object002
+    400128: Object003
+    400130: Object004
+    400132: Object007
+    400134: Object007 1
+    400136: Object008
+    400138: Object008 1
+    400140: Object009
+    400142: Object009 1
+    400144: Object010
+    400146: Object010 1
+    400148: Object011
+    400150: Object011 1
+    400152: Object012
+    400154: Object013
+    400156: Object014
+    400158: Object015
+    400160: Object030
+    400162: overall table
+    400164: pipe piece
+    400166: pipeline
+    400168: pipeline001
+    400170: Plane002
+    400172: Plane003
+    400174: Plane003 1
+    400176: removable pipe
+    400178: //RootNode
+    400180: room_floor
+    400182: table
+    2100000: 'Material #26'
+    2100002: 'Material #6'
+    2100004: 'Material #5'
+    2100006: 'Material #4'
+    2100008: No Name
+    2100010: 'Material #3'
+    2100012: 'Material #2'
+    2100014: 'Material #7'
+    2100016: 'Material #8'
+    2100018: 'Material #9'
+    2100020: 'Material #10'
+    2100022: 'Material #25'
+    2300000: ' 1'
+    2300002: Box001
+    2300004: Box003
+    2300006: Box004
+    2300008: Box005
+    2300010: Box006
+    2300012: Box007
+    2300014: Box008
+    2300016: Box009
+    2300018: Box010
+    2300020: Box010 1
+    2300022: Box011
+    2300024: Box011 1
+    2300026: Box012
+    2300028: Box012 1
+    2300030: Box013
+    2300032: Box013 1
+    2300034: Box014
+    2300036: Box016
+    2300038: Box019
+    2300040: Box023
+    2300042: Box026
+    2300044: Box027
+    2300046: Box028
+    2300048: Box029
+    2300050: Box030
+    2300052: Box031
+    2300054: Box032
+    2300056: Box033
+    2300058: Box034
+    2300060: Box035
+    2300062: Box036
+    2300064: Box037
+    2300066: closet_door_003
+    2300068: closet_door_02
+    2300070: closet_main001
+    2300072: Cylinder001
+    2300074: Cylinder001 1
+    2300076: Cylinder002
+    2300078: Cylinder003
+    2300080: Cylinder004
+    2300082: Cylinder005
+    2300084: Cylinder005 1
+    2300086: Cylinder006
+    2300088: Cylinder011
+    2300090: Cylinder012
+    2300092: Cylinder013
+    2300094: Cylinder014
+    2300096: Cylinder015
+    2300098: Cylinder016
+    2300100: Cylinder017
+    2300102: Cylinder018
+    2300104: Cylinder019
+    2300106: Cylinder020
+    2300108: Cylinder021
+    2300110: glass
+    2300112: Magnifying glass
+    2300114: Object001
+    2300116: Object002
+    2300118: Object003
+    2300120: Object004
+    2300122: Object007
+    2300124: Object007 1
+    2300126: Object008
+    2300128: Object008 1
+    2300130: Object009
+    2300132: Object009 1
+    2300134: Object010
+    2300136: Object010 1
+    2300138: Object011
+    2300140: Object011 1
+    2300142: Object012
+    2300144: Object013
+    2300146: Object014
+    2300148: Object015
+    2300150: Object030
+    2300152: pipe piece
+    2300154: pipeline
+    2300156: pipeline001
+    2300158: Plane002
+    2300160: Plane003
+    2300162: Plane003 1
+    2300164: removable pipe
+    2300166: room_floor
+    3300000: ' 1'
+    3300002: Box001
+    3300004: Box003
+    3300006: Box004
+    3300008: Box005
+    3300010: Box006
+    3300012: Box007
+    3300014: Box008
+    3300016: Box009
+    3300018: Box010
+    3300020: Box010 1
+    3300022: Box011
+    3300024: Box011 1
+    3300026: Box012
+    3300028: Box012 1
+    3300030: Box013
+    3300032: Box013 1
+    3300034: Box014
+    3300036: Box016
+    3300038: Box019
+    3300040: Box023
+    3300042: Box026
+    3300044: Box027
+    3300046: Box028
+    3300048: Box029
+    3300050: Box030
+    3300052: Box031
+    3300054: Box032
+    3300056: Box033
+    3300058: Box034
+    3300060: Box035
+    3300062: Box036
+    3300064: Box037
+    3300066: closet_door_003
+    3300068: closet_door_02
+    3300070: closet_main001
+    3300072: Cylinder001
+    3300074: Cylinder001 1
+    3300076: Cylinder002
+    3300078: Cylinder003
+    3300080: Cylinder004
+    3300082: Cylinder005
+    3300084: Cylinder005 1
+    3300086: Cylinder006
+    3300088: Cylinder011
+    3300090: Cylinder012
+    3300092: Cylinder013
+    3300094: Cylinder014
+    3300096: Cylinder015
+    3300098: Cylinder016
+    3300100: Cylinder017
+    3300102: Cylinder018
+    3300104: Cylinder019
+    3300106: Cylinder020
+    3300108: Cylinder021
+    3300110: glass
+    3300112: Magnifying glass
+    3300114: Object001
+    3300116: Object002
+    3300118: Object003
+    3300120: Object004
+    3300122: Object007
+    3300124: Object007 1
+    3300126: Object008
+    3300128: Object008 1
+    3300130: Object009
+    3300132: Object009 1
+    3300134: Object010
+    3300136: Object010 1
+    3300138: Object011
+    3300140: Object011 1
+    3300142: Object012
+    3300144: Object013
+    3300146: Object014
+    3300148: Object015
+    3300150: Object030
+    3300152: pipe piece
+    3300154: pipeline
+    3300156: pipeline001
+    3300158: Plane002
+    3300160: Plane003
+    3300162: Plane003 1
+    3300164: removable pipe
+    3300166: room_floor
+    4300000: room_floor
+    4300002: Cylinder001
+    4300004: Cylinder002
+    4300006: Cylinder003
+    4300008: Cylinder004
+    4300010: Box001
+    4300012: Box026
+    4300014: Box027
+    4300016: Box028
+    4300018: Cylinder005
+    4300020: Magnifying glass
+    4300024: Object004
+    4300026: Cylinder001
+    4300028: Box016
+    4300030: Box006
+    4300032: Object002
+    4300034: Box004
+    4300036: Box005
+    4300038: Box008
+    4300040: Box007
+    4300042: Box003
+    4300044: Box013
+    4300046: Box014
+    4300048: Object001
+    4300050: Box012
+    4300052: Box010
+    4300054: Box009
+    4300056: Box011
+    4300058: Cylinder011
+    4300060: Object009
+    4300062: Plane002
+    4300064: closet_door_02
+    4300066: Object013
+    4300068: Object012
+    4300070: glass
+    4300072: Object007
+    4300074: Object008
+    4300076: Object003
+    4300078: Object014
+    4300080: Object010
+    4300082: Object011
+    4300084: Object007
+    4300086: Object008
+    4300088: Object009
+    4300090: Object010
+    4300092: Object011
+    4300094: Plane003
+    4300096: closet_main001
+    4300098: closet_door_003
+    4300100: Box013
+    4300102: Box012
+    4300104: Box011
+    4300106: Box010
+    4300108: Box029
+    4300110: Object015
+    4300112: Box030
+    4300114: Box031
+    4300116: pipeline
+    4300118: removable pipe
+    4300120: pipeline001
+    4300122: pipe piece
+    4300124: Box023
+    4300126: Box019
+    4300128: Cylinder012
+    4300130: Cylinder013
+    4300132: Cylinder014
+    4300134: Cylinder015
+    4300136: Cylinder016
+    4300138: Cylinder017
+    4300140: Cylinder018
+    4300142: Cylinder005
+    4300144: Cylinder006
+    4300146: Plane003
+    4300148: Object030
+    4300150: Box032
+    4300152: Box033
+    4300154: Cylinder019
+    4300156: Cylinder020
+    4300158: Box034
+    4300160: Cylinder021
+    4300162: Box035
+    4300164: Box036
+    4300166: Box037
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
