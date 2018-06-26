@@ -381,6 +381,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b427f7e9b34e9a14f97ac02161fcf08d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &640457799 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1544717996166596, guid: c6fe01c641f58dd4081750d9ad125532,
+    type: 2}
+  m_PrefabInternal: {fileID: 1114179781}
 --- !u!1 &675673109
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,6 +489,16 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 675673109}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &939420825 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1915930686095892, guid: c6fe01c641f58dd4081750d9ad125532,
+    type: 2}
+  m_PrefabInternal: {fileID: 1114179781}
+--- !u!1 &1085154106 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1308342563680042, guid: c6fe01c641f58dd4081750d9ad125532,
+    type: 2}
+  m_PrefabInternal: {fileID: 1114179781}
 --- !u!1001 &1114179781
 Prefab:
   m_ObjectHideFlags: 0
@@ -663,6 +678,25 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1179667991}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1251284726 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1298578762267828, guid: c6fe01c641f58dd4081750d9ad125532,
+    type: 2}
+  m_PrefabInternal: {fileID: 1114179781}
+--- !u!114 &1251284727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1251284726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4917b183e7294458026d345bda1e3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockPick: {fileID: 939420825}
+  lockPickPivotRot: {fileID: 640457799}
+  wrenchPivot: {fileID: 1085154106}
 --- !u!1 &1778653691
 GameObject:
   m_ObjectHideFlags: 0
