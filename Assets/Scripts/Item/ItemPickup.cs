@@ -14,6 +14,7 @@ public class ItemPickup : Interactable
 
     public override void Interact()
     {
+        GetComponent<DialogueTrigger>().TriggerDialogue();
         Debug.Log("Item pickup is happening");
         PickUp();
     }
