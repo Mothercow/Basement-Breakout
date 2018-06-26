@@ -27,11 +27,13 @@ public class LockPickShake : MonoBehaviour
 
     void Update ()
     {
+        
         tempRot = lockPickPivotRot.GetComponent<AngleClamp>().currentRotation.y;
         tempWrenchRot = wrenchPivot.GetComponent<AngleClamp>().currentRotation.y;
         Debug.Log(isInCorrectArea);
         Debug.Log(startShaking);
-        Debug.Log(startPos);
+        Debug.Log(tempRot);
+        //Debug.Log(startPos);
 
         if (tempRot > 45 && tempRot < 90 )
         {
@@ -42,7 +44,7 @@ public class LockPickShake : MonoBehaviour
             isInCorrectArea = false;
         }
 
-        if (tempWrenchRot > 90 && tempWrenchRot < 100)
+        if (tempWrenchRot > 180 && tempWrenchRot < 200)
         {
             Debug.Log("Unlocked");
         }

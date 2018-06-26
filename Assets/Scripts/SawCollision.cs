@@ -7,8 +7,15 @@ public class SawCollision : MonoBehaviour
     Animator sawAnimator;
     public GameObject hacksawAnim;
     public GameObject hacksawOnAnim;
+    public GameObject pipeFall;
 
     public bool isHackSawOnAnim;
+
+    public static bool hasAnimationEnded = false;
+    public static bool startTimer = false;
+
+    private float timerAnimation = 3.0f;
+    
 
     private void Start()
     {
@@ -25,6 +32,42 @@ public class SawCollision : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        Debug.Log(hasAnimationEnded);
+        Debug.Log(timerAnimation);
+        Debug.Log(startTimer);
+
+
+        if(startTimer == true)
+        {
+            if (timerAnimation > 0)
+            {
+                timerAnimation -= Time.deltaTime;
+            }
+        }
+        if (timerAnimation <= 0)
+        {
+            hasAnimationEnded = true;
+        }
+
+        if(hasAnimationEnded == true)
+        {
+            if(isHackSawOnAnim == true)
+            {
+                this.gameObject.SetActive(false);
+                pipeFall.GetComponent<Rigidbody>().useGravity = true;
+                pipeFall.GetComponent<Collider>().isTrigger = false;
+                pipeFall.GetComponent<ItemPickup>().enabled = true;
+            }
+            else
+            {
+                return;
+            }
+        }
+    }
+
+
     void OnTriggerEnter(Collider other)
     {
         if (isHackSawOnAnim == true)
@@ -37,6 +80,7 @@ public class SawCollision : MonoBehaviour
         }
         this.gameObject.SetActive(false);
         sawAnimator.enabled = true;
+        startTimer = true;
         sawAnimator.SetBool("IsContactWithPipe", true);
         Debug.Log("stuff");
     }

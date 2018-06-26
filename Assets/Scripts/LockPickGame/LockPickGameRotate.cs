@@ -112,8 +112,8 @@ public class LockPickGameRotate : MonoBehaviour
                     {
                         if (LockPickShake.isInCorrectArea == true)
                         {
-                            wrenchPivot.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.x * -1f, Space.World);
-                            wrenchPivot.transform.Rotate(0f, 0f, Input.GetTouch(0).deltaPosition.y * -1f, Space.World);
+                            wrenchPivot.transform.Rotate(0f, 0f, Input.GetTouch(1).deltaPosition.x * -1f, Space.World);
+                            wrenchPivot.transform.Rotate(0f, 0f, Input.GetTouch(1).deltaPosition.y * -1f, Space.World);
                         }
                         else
                         {
