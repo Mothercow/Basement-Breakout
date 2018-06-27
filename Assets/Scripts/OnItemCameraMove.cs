@@ -16,7 +16,6 @@ public class OnItemCameraMove : Interactable
     void ChangeCamPos()
     {
         Debug.Log("Changing Camera Position..");
-
         Camera.main.GetComponentInParent<Transform>().position = cameraChangePos.transform.position;
 
     }

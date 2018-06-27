@@ -88,8 +88,8 @@ public class GyroController : MonoBehaviour {
     }
     void Update()
     {
-        cameraContainer.transform.Rotate(0, -Input.gyro.rotationRateUnbiased.y, 0);
-        this.transform.Rotate(-Input.gyro.rotationRateUnbiased.x, 0, 0);
+        //cameraContainer.transform.Rotate(0, -Input.gyro.rotationRateUnbiased.y, 0);
+        this.transform.Rotate(-Input.gyro.rotationRateUnbiased.x, -Input.gyro.rotationRateUnbiased.y, 0);
 /*
         if (Input.touchCount > 0)
         {
