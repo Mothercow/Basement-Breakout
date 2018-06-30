@@ -1326,6 +1326,7 @@ MonoBehaviour:
     sentences:
     - Eat Shit 2
   solved: 0
+  timeLeft: 0
 --- !u!114 &308865018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2575,6 +2576,7 @@ MonoBehaviour:
     sentences:
     - 
   solved: 1
+  timeLeft: 3
 --- !u!1001 &818616332
 Prefab:
   m_ObjectHideFlags: 0
@@ -3915,6 +3917,7 @@ MonoBehaviour:
   hasInteracted: 0
   selectedObject: {fileID: 0}
   cameraChangePos: {fileID: 1616079292}
+  CamCon: {fileID: 0}
 --- !u!23 &1000055058
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5531,7 +5534,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52ced372fe915d849b3a40a567dadca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLeft: 5
   nameText: {fileID: 1845476597}
   dialogueText: {fileID: 1693065541}
   animator: {fileID: 1741239113}
@@ -8404,6 +8406,7 @@ MonoBehaviour:
     sentences:
     - Eat Shit
   solved: 1
+  timeLeft: 0
 --- !u!224 &1747070984 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224332189667854408, guid: 7943dd29a7b7dd54d9b57f1b5c982772,
@@ -10402,6 +10405,7 @@ MonoBehaviour:
     sentences:
     - Holy shit its a circle
   solved: 1
+  timeLeft: 2
 --- !u!1 &2058612413
 GameObject:
   m_ObjectHideFlags: 0

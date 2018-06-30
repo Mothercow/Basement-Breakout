@@ -5,6 +5,7 @@ public class ItemPickup : Interactable
     public Item item;
     MeshRenderer meshRenderer;
     BoxCollider boxCollider;
+    
 
     private void Start()
     {
@@ -16,6 +17,7 @@ public class ItemPickup : Interactable
     {
         GetComponent<DialogueTrigger>().TriggerDialogue();
         Debug.Log("Item pickup is happening");
+        
         PickUp();
     }
 

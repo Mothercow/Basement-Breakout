@@ -8,25 +8,26 @@ public class DialogueManager : MonoBehaviour {
     //public bool NegativeProc = false;
     // public bool PositiveProc = false;
 
-    public int timeLeft = 5;
-
+   // public int timeLeft = 5;
+    bool activate = true;
+    int timeleft ;
     public Text nameText;
     public Text dialogueText;
 
-    public Animator animator;
+    //public Animator animator;
 
     private Queue<string> sentences;
 
     // Use this for initialization
     void Start() {
-
+        
         sentences = new Queue<string>();
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
-
-        animator.SetBool("IsOpen", true);
+        timeleft = FindObjectOfType<DialogueTrigger>().timeLeft;
+       // animator.SetBool("IsOpen", true);
 
         nameText.text = dialogue.name;
 
@@ -36,7 +37,7 @@ public class DialogueManager : MonoBehaviour {
         {
             sentences.Enqueue(sentence);
         }
-
+        
         DisplayNextSentence();
 
 
@@ -57,7 +58,8 @@ public class DialogueManager : MonoBehaviour {
 
 		string sentence = sentences.Dequeue();
 		StopAllCoroutines();
-		StartCoroutine(TypeSentence(sentence));
+        StartCoroutine("LoseTime");
+        StartCoroutine(TypeSentence(sentence));
 	}
 
 	IEnumerator TypeSentence (string sentence)
@@ -72,7 +74,40 @@ public class DialogueManager : MonoBehaviour {
    
     void EndDialogue()
 	{
-		animator.SetBool("IsOpen", false);
+	//	animator.SetBool("IsOpen", false);
 	}
+    private void Update()
+    {
+       // Debug.Log(timeleft);
+       // if (activate == true)
+        //{
+          //  Debug.Log("Off");
+            if (timeleft <= 0)
+            {
+               
+                dialogueText.text = "";
+                StopCoroutine("LoseTime");
+
+               // activate = false;
+
+            }
+      //  }
+        
+       
+        
+    }
+    IEnumerator LoseTime()
+    {
+            while (true)
+            {
+               
+                    yield return new WaitForSeconds(1);
+                    timeleft--;
+                
+                
+            }
+        
+        
+    }
 
 }

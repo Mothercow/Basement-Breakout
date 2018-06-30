@@ -7,7 +7,12 @@ public class DialogueTrigger : MonoBehaviour {
 	public Dialogue Pdialogue;
     public Dialogue Ndialogue;
     public bool solved = false;
+    public int timeLeft;
 
+    void Start()
+    {
+        
+    }
 
     public void TriggerDialogue ()
 	{
@@ -22,5 +27,11 @@ public class DialogueTrigger : MonoBehaviour {
         }
 		
 	}
+    void Update()
+    {
+        //Debug.Log(timeLeft);
+        
+    }
+
     
 }

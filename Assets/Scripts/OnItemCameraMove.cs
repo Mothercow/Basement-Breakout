@@ -6,6 +6,12 @@ public class OnItemCameraMove : Interactable
 {
 
     public GameObject cameraChangePos;
+    public GameObject CamCon;
+
+    private void Start()
+    {
+      //  FindObjectOfType<"CameraC">
+    }
 
     public override void Interact()
     {
@@ -17,7 +23,10 @@ public class OnItemCameraMove : Interactable
     {
         Debug.Log("Changing Camera Position..");
 
-        Camera.main.GetComponentInParent<Transform>().position = cameraChangePos.transform.position;
+        CamCon = GameObject.Find("CameraContainer");
+        CamCon.transform.position = cameraChangePos.transform.position;
+
+       // Camera.main.GetComponentInParent<Transform>().position = cameraChangePos.transform.position;
 
     }
 }
