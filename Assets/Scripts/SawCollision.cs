@@ -8,6 +8,7 @@ public class SawCollision : MonoBehaviour
     public GameObject hacksawAnim;
     public GameObject hacksawOnAnim;
     public GameObject pipeFall;
+    public GameObject inspectCloseButton;
 
     public bool isHackSawOnAnim;
 
@@ -55,6 +56,10 @@ public class SawCollision : MonoBehaviour
         {
             if(isHackSawOnAnim == true)
             {
+                if(inspectCloseButton.gameObject.activeInHierarchy == true)
+                {
+                    inspectCloseButton.SetActive(false);
+                }
                 this.gameObject.SetActive(false);
                 pipeFall.GetComponent<Rigidbody>().useGravity = true;
                 pipeFall.GetComponent<Collider>().isTrigger = false;
