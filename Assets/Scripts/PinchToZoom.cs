@@ -13,6 +13,8 @@ public class PinchToZoom : MonoBehaviour
     // Update is called once per frame
     void Update ()
     {
+        Debug.Log(objDistance);
+
         objDistance = Vector3.Distance(this.transform.position, Camera.main.transform.position);
 
 
@@ -39,10 +41,24 @@ public class PinchToZoom : MonoBehaviour
                     this.transform.position = Vector3.MoveTowards(this.transform.position, Camera.main.transform.position, Time.deltaTime * direction * speed);
                 }
 
+                
+              
             }
         
         }
-	}
+        if (objDistance > 2.5f)
+        {
+            
+            this.transform.position = Vector3.MoveTowards(this.transform.position, Camera.main.transform.position, 0.25f);
+
+        }
+        else if (objDistance < 0.8f)
+        {
+            
+            this.transform.position = Vector3.MoveTowards(this.transform.position, Camera.main.transform.position, -0.25f);
+        }
+        
+    }
 
 
     /*public void Update()

@@ -20,7 +20,7 @@ public class Interactable : MonoBehaviour
             Debug.DrawRay(ray.origin, ray.direction * 10, Color.green);
             if (Physics.Raycast(ray, out Hit))
             {
-                Debug.Log("Selected Something");
+               // Debug.Log("Selected Something");
                 Interactable interactable = Hit.collider.GetComponent<Interactable>();
 
                 if (interactable != null && interactable.hasInteracted == false)

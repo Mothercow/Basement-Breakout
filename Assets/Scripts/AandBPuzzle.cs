@@ -18,7 +18,7 @@ public class AandBPuzzle : Interactable
 
         if(Inventory.instance.itemOnHand != null)
         {
-            Debug.Log(Inventory.instance.itemOnHand.name);
+         //   Debug.Log(Inventory.instance.itemOnHand.name);
         }
   
     }

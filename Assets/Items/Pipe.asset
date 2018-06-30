@@ -13,7 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Pipe
   icon: {fileID: 21300000, guid: 3632fc205f4b0f243b1baac1de6faa2f, type: 3}
-  inspectGameObject: {fileID: 0}
+  inspectGameObject: {fileID: 1838468902090744, guid: 4cf189e1afa920646b32232beb828c22,
+    type: 2}
   isDefaultItem: 0
   distance: 20
   itemIndex: 0
