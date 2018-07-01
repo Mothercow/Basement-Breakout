@@ -35,9 +35,9 @@ public class SawCollision : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(hasAnimationEnded);
-        Debug.Log(timerAnimation);
-        Debug.Log(startTimer);
+       // Debug.Log(hasAnimationEnded);
+        //Debug.Log(timerAnimation);
+//Debug.Log(startTimer);
 
 
         if(startTimer == true)

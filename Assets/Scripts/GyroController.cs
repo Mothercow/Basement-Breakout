@@ -88,26 +88,26 @@ public class GyroController : MonoBehaviour {
     }
     void Update()
     {
-        //cameraContainer.transform.Rotate(0, -Input.gyro.rotationRateUnbiased.y, 0);
-        this.transform.Rotate(-Input.gyro.rotationRateUnbiased.x, -Input.gyro.rotationRateUnbiased.y, 0);
-/*
-        if (Input.touchCount > 0)
-        {
-            if (Input.GetTouch(0).phase == TouchPhase.Began)
-            {
-                FirstPoint = Input.GetTouch(0).position;
-                xAngleTemp = xAngle;
-                yAngleTemp = yAngle;
-            }
-            if (Input.GetTouch(0).phase == TouchPhase.Moved)
-            {
-                
-                SecondPoint = Input.GetTouch(0).position;
-                xAngle = xAngleTemp + (SecondPoint.x - FirstPoint.x);
-                // yAngle = yAngleTemp + (SecondPoint.y - FirstPoint.y) * 90 / Screen.height;
-                cameraContainer.transform.Rotate(0.0f, Input.GetTouch(0).deltaPosition.x, 0.0f);
-            }
-        }*/
+        cameraContainer.transform.Rotate(0, -Input.gyro.rotationRateUnbiased.y, 0);
+        this.transform.Rotate(-Input.gyro.rotationRateUnbiased.x, 0, 0);
+        /*
+                if (Input.touchCount > 0)
+                {
+                    if (Input.GetTouch(0).phase == TouchPhase.Began)
+                    {
+                        FirstPoint = Input.GetTouch(0).position;
+                        xAngleTemp = xAngle;
+                        yAngleTemp = yAngle;
+                    }
+                    if (Input.GetTouch(0).phase == TouchPhase.Moved)
+                    {
+
+                        SecondPoint = Input.GetTouch(0).position;
+                        xAngle = xAngleTemp + (SecondPoint.x - FirstPoint.x);
+                        // yAngle = yAngleTemp + (SecondPoint.y - FirstPoint.y) * 90 / Screen.height;
+                        cameraContainer.transform.Rotate(0.0f, Input.GetTouch(0).deltaPosition.x, 0.0f);
+                    }
+                }*/
 
     }
     public void Reset()
