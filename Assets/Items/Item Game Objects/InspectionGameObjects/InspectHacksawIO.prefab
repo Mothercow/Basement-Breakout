@@ -351,7 +351,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &65620638097744084
 BoxCollider:
@@ -390,6 +390,7 @@ MonoBehaviour:
   hacksawAnim: {fileID: 0}
   hacksawOnAnim: {fileID: 0}
   pipeFall: {fileID: 0}
+  inspectCloseButton: {fileID: 0}
   isHackSawOnAnim: 0
 --- !u!114 &114920335436084610
 MonoBehaviour:
