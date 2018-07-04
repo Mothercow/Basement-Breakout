@@ -4,7 +4,8 @@ using UnityEngine.UI;
  
 public class Timer : MonoBehaviour
 {
-    public int timeLeft = 5;
+    public int Seconds = 5;
+    public int Minutes;
     public Text countdownText;
  
     // Use this for initialization
@@ -16,13 +17,27 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Seconds<10)
+        {
+            countdownText.text = ("Time Left = " + Minutes + " : " + "0"+ Seconds);
+        }
+        else
+        {
+            countdownText.text = ("Time Left = " + Minutes + " : " + Seconds);
+        }
         
-        countdownText.text = ("Time Left = " + timeLeft);
- 
-        if (timeLeft <= 0)
+
+        if (Seconds <= 0 && Minutes <= 0)
         {
             StopCoroutine("LoseTime");
 
+
+        }
+        else if (Seconds <= 0 && Minutes > 0)
+        {
+
+            Minutes--;
+            Seconds = 59;
         }
     }
  
@@ -31,7 +46,7 @@ public class Timer : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(1);
-            timeLeft--;
+            Seconds--;
         }
     }
 }

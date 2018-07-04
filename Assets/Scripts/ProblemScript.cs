@@ -15,7 +15,7 @@ public class ProblemScript : MonoBehaviour
 
     public void Update()
     {
-        if(gasTimer.GetComponent<Timer>().timeLeft == 0)
+        if(gasTimer.GetComponent<Timer>().Seconds == 0)
         {
             loseScreenUI.SetActive(true);
         }

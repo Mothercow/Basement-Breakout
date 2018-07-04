@@ -7,7 +7,7 @@ public class LockPickShake : MonoBehaviour
     public GameObject lockPick;
     public GameObject lockPickPivotRot;
     public GameObject wrenchPivot;
-
+    float shakenum = 1.0f;
     public static bool startShaking = false;
     public static bool isInCorrectArea = false;
 
@@ -52,6 +52,7 @@ public class LockPickShake : MonoBehaviour
         if(startShaking == true)
         {
             Shake();
+            Debug.Log("Shaking");
         }
         
         if(LockPickGameRotate.resetPickPos == true)
@@ -65,7 +66,17 @@ public class LockPickShake : MonoBehaviour
 
     public void Shake()
     {
-        lockPick.transform.localRotation = Quaternion.Euler(pickObjectRot);
+        //lockPick.transform.localRotation = Quaternion.Euler(pickObjectRot);
+        if(shakenum<2f)
+        {
+            shakenum += 0.2f;
+        }
+        else if(shakenum >=2f)
+        {
+            shakenum -= 0.2f;
+        }
+
+        this.transform.localRotation = Quaternion.Euler(shakenum, shakenum,shakenum);
     }
 
     public void StopShake()
