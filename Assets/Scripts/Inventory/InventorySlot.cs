@@ -46,6 +46,7 @@ public class InventorySlot : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     {
         if (item != null)
         {
+            InspectButton.SetActive(true);
             item.Use();
         }
         else
@@ -58,7 +59,7 @@ public class InventorySlot : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     {
         if (item != null)
         {
-            InspectButton.SetActive(true);
+            //InspectButton.SetActive(true);
             item.Hold();
         }
         else

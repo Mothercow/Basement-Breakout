@@ -24,12 +24,12 @@ public class Item : ScriptableObject
 
     public virtual void Use()
     {
-        Inventory.instance.SetItemOnHand(this);
+        Inspect();
     }
 
     public virtual void Hold()
     {
-        Inspect();
+        //Inspect();
     }
 
     public  void Inspect()
