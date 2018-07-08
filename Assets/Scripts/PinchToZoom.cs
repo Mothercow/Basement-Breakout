@@ -13,7 +13,7 @@ public class PinchToZoom : MonoBehaviour
     // Update is called once per frame
     void Update ()
     {
-        Debug.Log(objDistance);
+       // Debug.Log(objDistance);
 
         objDistance = Vector3.Distance(this.transform.position, Camera.main.transform.position);
 

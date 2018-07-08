@@ -1,0 +1,203 @@
+fileFormatVersion: 2
+guid: a8571b481237d2a40980eb4f5bb55168
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: closet_main
+    100002: Glass
+    100004: //RootNode
+    100006: glasspiece
+    100008: glasspiece003
+    100010: glasspiece004
+    100012: glasspiece005
+    100014: glasspiece006
+    100016: glasspiece007
+    100018: glasspiece008
+    100020: glasspiece009
+    100022: glasspiece010
+    100024: glasspiece011
+    100026: glasspiece012
+    100028: glasspiece013
+    100030: glasspiece014
+    100032: glasspiece2
+    100034: Plane001
+    400000: closet_main
+    400002: Glass
+    400004: //RootNode
+    400006: glasspiece
+    400008: glasspiece003
+    400010: glasspiece004
+    400012: glasspiece005
+    400014: glasspiece006
+    400016: glasspiece007
+    400018: glasspiece008
+    400020: glasspiece009
+    400022: glasspiece010
+    400024: glasspiece011
+    400026: glasspiece012
+    400028: glasspiece013
+    400030: glasspiece014
+    400032: glasspiece2
+    400034: Plane001
+    2100000: 'Material #2'
+    2100002: 'Material #3'
+    2100004: No Name
+    2300000: closet_main
+    2300002: Glass
+    2300004: glasspiece
+    2300006: glasspiece003
+    2300008: glasspiece004
+    2300010: glasspiece005
+    2300012: glasspiece006
+    2300014: glasspiece007
+    2300016: glasspiece008
+    2300018: glasspiece009
+    2300020: glasspiece010
+    2300022: glasspiece011
+    2300024: glasspiece012
+    2300026: glasspiece013
+    2300028: glasspiece014
+    2300030: glasspiece2
+    2300032: Plane001
+    3300000: closet_main
+    3300002: Glass
+    3300004: glasspiece
+    3300006: glasspiece003
+    3300008: glasspiece004
+    3300010: glasspiece005
+    3300012: glasspiece006
+    3300014: glasspiece007
+    3300016: glasspiece008
+    3300018: glasspiece009
+    3300020: glasspiece010
+    3300022: glasspiece011
+    3300024: glasspiece012
+    3300026: glasspiece013
+    3300028: glasspiece014
+    3300030: glasspiece2
+    3300032: Plane001
+    4300000: closet_main
+    4300002: Glass
+    4300004: Plane001
+    4300006: glasspiece
+    4300008: glasspiece2
+    4300010: glasspiece003
+    4300012: glasspiece004
+    4300014: glasspiece005
+    4300016: glasspiece006
+    4300018: glasspiece007
+    4300020: glasspiece008
+    4300022: glasspiece009
+    4300024: glasspiece010
+    4300026: glasspiece011
+    4300028: glasspiece012
+    4300030: glasspiece013
+    4300032: glasspiece014
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #2'
+    second: {fileID: 2100000, guid: be1423aa253ea8249af979c42477ad6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #3'
+    second: {fileID: 2100000, guid: 0ed6c2cbdc6421741a39cebd73cc39b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: b79a01a65234349449a0f4049f30fa30, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Glass(texture)
+    second: {fileID: 2800000, guid: 8cd7c5773aa9e674895ed1b5d5e1c241, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: glasscupboard(texture)
+    second: {fileID: 2800000, guid: 2e36036f0b9f04d4ca0cca9993905aca, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

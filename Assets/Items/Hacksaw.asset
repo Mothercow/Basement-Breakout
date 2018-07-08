@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Hacksaw
   icon: {fileID: 21300000, guid: 2bcb5a48ee793c14a85adaed4a7477d8, type: 3}
-  inspectGameObject: {fileID: 1182904092283170, guid: 2e94db16ac3b54f4cbbf8680dad14e91,
+  inspectGameObject: {fileID: 1867738860548808, guid: 50099ee8107e0a6449bfbf3b292c72e8,
     type: 2}
   isDefaultItem: 0
   distance: 1
