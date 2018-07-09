@@ -15,7 +15,7 @@ public class ItemPickup : Interactable
 
     public override void Interact()
     {
-        GetComponent<DialogueTrigger>().TriggerDialogue();
+        //GetComponent<DialogueTrigger>().TriggerDialogue();
         Debug.Log("Item pickup is happening");
         
         PickUp();
@@ -37,12 +37,12 @@ public class ItemPickup : Interactable
             }
             else
             {
-                meshRenderer.enabled = false;
-                boxCollider.enabled = false;
+                this.gameObject.SetActive(false);
+                //meshRenderer.enabled = false;
+                //boxCollider.enabled = false;
             }
             
         }
-        
 
         //hasInteracted = false;
     }

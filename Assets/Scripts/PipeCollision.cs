@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class PipeCollision : MonoBehaviour
 {
+    public GameObject inspectCloseButton;
+
     void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.CompareTag("Cupboard"))
         {
-            Destroy(other.gameObject);
-            Debug.Log("hitting shit");
+            other.GetComponent<Animator>().enabled = true;
+            this.gameObject.SetActive(false);
+            inspectCloseButton = GameObject.Find("Inspect Close Button");
+            if (inspectCloseButton.gameObject.activeInHierarchy == true)
+            {
+                inspectCloseButton.SetActive(false);
+            }
         }
     }
 }

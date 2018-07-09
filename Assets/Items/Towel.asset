@@ -13,8 +13,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Towel
   icon: {fileID: 21300000, guid: 8a195b7d0cd953c4180774b9282207f1, type: 3}
-  inspectGameObject: {fileID: 0}
+  inspectGameObject: {fileID: 1535937011832826, guid: 4d6e0ab16581b384a85b840301de2461,
+    type: 2}
   isDefaultItem: 0
-  distance: 20
+  distance: 1
   itemIndex: 0
   hasSelectedItem: 0
