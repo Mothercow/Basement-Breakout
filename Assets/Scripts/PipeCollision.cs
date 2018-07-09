@@ -8,15 +8,19 @@ public class PipeCollision : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Cupboard"))
+        if(other.gameObject.CompareTag("Pipe"))
         {
-            other.GetComponent<Animator>().enabled = true;
-            this.gameObject.SetActive(false);
-            inspectCloseButton = GameObject.Find("Inspect Close Button");
+            this.GetComponent<Animator>().enabled = true;
             if (inspectCloseButton.gameObject.activeInHierarchy == true)
             {
                 inspectCloseButton.SetActive(false);
             }
+            foreach (Transform child in Camera.main.transform)
+            {
+                GameObject.Destroy(child.gameObject);
+            }
+            Item.isInspecting = false;
+            Inventory.instance.Remove(Inventory.instance.itemOnHand);
         }
     }
 }

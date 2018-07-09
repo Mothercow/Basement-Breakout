@@ -55,11 +55,10 @@ GameObject:
   - component: {fileID: 4662101192381456}
   - component: {fileID: 54930726210970622}
   - component: {fileID: 65816265782869216}
-  - component: {fileID: 114803429260223444}
   - component: {fileID: 114455741340960136}
   m_Layer: 0
   m_Name: new HacksawIO
-  m_TagString: Untagged
+  m_TagString: Hacksaw
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -222,23 +221,8 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1867738860548808}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d955befe1c58ce74f83b481ca1dc7fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114803429260223444
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1867738860548808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 228293baa27d1484588123d1e909410f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pipeFall: {fileID: 0}
-  inspectCloseButton: {fileID: 0}
-  gasParticles: {fileID: 0}
-  isHackSawAnim: 0

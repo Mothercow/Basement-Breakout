@@ -11,9 +11,11 @@ public class GasDamageScript : MonoBehaviour
 
     public GameObject loseScreen;
 
-    public float gasTimer = 30.0f;
+    public float gasTimer = 40.0f;
     private bool gasTimerStarted = false;
 
+    public static bool gasProblemSolved = false;
+    
     private void Update()
     {
        // Debug.Log(gasTimer);
@@ -24,7 +26,7 @@ public class GasDamageScript : MonoBehaviour
             gasTimerStarted = true;
         }
 
-        if(gasTimerStarted == true)
+        if(gasTimerStarted == true && gasProblemSolved == false)
         {
             gasTimer -= Time.deltaTime;
         }

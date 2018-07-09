@@ -46,7 +46,7 @@ public class PinchToZoom : MonoBehaviour
             }
         
         }
-        if (objDistance > 2.5f)
+        if (objDistance > 3.5f)
         {
             
             this.transform.position = Vector3.MoveTowards(this.transform.position, Camera.main.transform.position, 0.25f);

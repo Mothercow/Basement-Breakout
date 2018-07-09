@@ -17,6 +17,7 @@ public class OnItemCameraMove : Interactable
     {
         Debug.Log("Camera moving is happening");
         ChangeCamPos();
+        this.gameObject.GetComponent<OnItemCameraMove>().hasInteracted = false;
     }
     
     void ChangeCamPos()

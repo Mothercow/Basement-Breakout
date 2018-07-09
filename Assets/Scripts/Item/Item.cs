@@ -25,6 +25,7 @@ public class Item : ScriptableObject
     public virtual void Use()
     {
         Inspect();
+        Inventory.instance.SetItemOnHand(this);
     }
 
     public virtual void Hold()

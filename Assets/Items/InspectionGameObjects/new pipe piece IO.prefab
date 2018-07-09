@@ -24,10 +24,9 @@ GameObject:
   - component: {fileID: 54171611226027526}
   - component: {fileID: 65743217758005752}
   - component: {fileID: 114819562060945178}
-  - component: {fileID: 114837510746122974}
   m_Layer: 0
   m_Name: new pipe piece IO
-  m_TagString: Untagged
+  m_TagString: Pipe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,20 +120,8 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1963710804779432}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d955befe1c58ce74f83b481ca1dc7fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114837510746122974
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1963710804779432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a43f79e59193e7c4aacd054f87dc594d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inspectCloseButton: {fileID: 0}
