@@ -13,7 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Magnifying Glass
   icon: {fileID: 21300000, guid: c30f4e96a4a5473418dab4efbe91ded5, type: 3}
-  inspectGameObject: {fileID: 0}
+  inspectGameObject: {fileID: 1778720316216628, guid: 56323fff621358544b8fc8e4b929b555,
+    type: 2}
   isDefaultItem: 0
   distance: 20
   itemIndex: 0
