@@ -11,6 +11,7 @@ public class PipeCollision : MonoBehaviour
         if(other.gameObject.CompareTag("Pipe"))
         {
             this.GetComponent<Animator>().enabled = true;
+            this.GetComponent<BoxCollider>().enabled = false;
             if (inspectCloseButton.gameObject.activeInHierarchy == true)
             {
                 inspectCloseButton.SetActive(false);

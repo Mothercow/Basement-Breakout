@@ -69,6 +69,7 @@ public class SawCollision : MonoBehaviour
 
         if(hasAnimationEnded2 == true)
         {
+            hacksawAnim2.SetActive(false);
             this.GetComponent<Rigidbody>().useGravity = true;
             this.GetComponent<Collider>().isTrigger = false;
             this.GetComponent<ItemPickup>().enabled = true;
