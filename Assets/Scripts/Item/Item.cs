@@ -7,7 +7,7 @@ public class Item : ScriptableObject
     public Sprite icon = null;
     public GameObject inspectGameObject = null;
     public bool isDefaultItem = false;
-    public int distance = 20;
+    public float distance = 1.0f;
     public int itemIndex;
     public bool hasSelectedItem = false;
     public static bool isInspecting = false;

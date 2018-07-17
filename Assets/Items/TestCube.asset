@@ -13,9 +13,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: TestCube
   icon: {fileID: 21300000, guid: 2045f6b2a10fd7c4a8aca26e1d17ff4b, type: 3}
-  inspectGameObject: {fileID: 1587875252848968, guid: d5b90d310319e0d4da147fcf774c14b0,
+  inspectGameObject: {fileID: 1556444393079410, guid: 4ef4a0fecc6c58443bdeeb8524a58bd5,
     type: 2}
   isDefaultItem: 0
-  distance: 5
+  distance: 1
   itemIndex: 0
   hasSelectedItem: 1

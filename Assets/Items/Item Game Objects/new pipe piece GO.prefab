@@ -23,14 +23,14 @@ GameObject:
   - component: {fileID: 23797217251252008}
   - component: {fileID: 54171611226027526}
   - component: {fileID: 65309380719864096}
-  - component: {fileID: 114161324838410568}
-  - component: {fileID: 114996234322088050}
+  - component: {fileID: 114412568059871144}
+  - component: {fileID: 114313919682603098}
   m_Layer: 0
   m_Name: new pipe piece GO
   m_TagString: Pipe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &4876514332182152
 Transform:
@@ -38,9 +38,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1963710804779432}
-  m_LocalRotation: {x: 0.00000011920929, y: -1.0658142e-14, z: -0.00000008940697,
-    w: 1}
-  m_LocalPosition: {x: -0.0012274169, y: 0.0013085937, z: -0.006480713}
+  m_LocalRotation: {x: -0, y: -0, z: 1.2705491e-21, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -115,7 +114,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8117527, y: 0.15799887, z: 0.1579989}
   m_Center: {x: -0.000000044703484, y: -0.00000023841858, z: -6.0584518e-28}
---- !u!114 &114161324838410568
+--- !u!114 &114313919682603098
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1963710804779432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00ddd33eae28b5148a72170d47ccd942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pdialogue:
+    name: 
+    sentences:
+    - The gas is leaking!
+  Ndialogue:
+    name: 
+    sentences: []
+  solved: 1
+  timeLeft: 3
+--- !u!114 &114412568059871144
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -129,18 +148,3 @@ MonoBehaviour:
   hasInteracted: 0
   selectedObject: {fileID: 0}
   item: {fileID: 11400000, guid: eb8747a3b749e6e48b12830fd0584c37, type: 2}
---- !u!114 &114996234322088050
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1963710804779432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 228293baa27d1484588123d1e909410f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inspectCloseButton: {fileID: 0}
-  gasParticles: {fileID: 0}
-  hacksawAnim: {fileID: 0}
-  hacksawAnim2: {fileID: 0}

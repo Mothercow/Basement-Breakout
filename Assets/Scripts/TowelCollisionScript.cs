@@ -10,7 +10,6 @@ public class TowelCollisionScript : MonoBehaviour
     public GameObject towelOnAnim;
 
     GasDamageScript gasDamageScript;
-    ExitInspectScript exitInspectScript;
 
     private void Start()
     {

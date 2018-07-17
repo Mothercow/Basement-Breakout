@@ -25,11 +25,56 @@ public class Inventory : MonoBehaviour
     public delegate void OnItemChanged();
     public OnItemChanged onItemChangedCallBack;
 
+    public bool PC1;
+    public bool PC2;
+
     public int space = 10;
+    public GameObject paperChange;
+    public GameObject paperChange2;
+    public Item docAndClip;
+    public Item docAndClip2;
+    public Item doubleClip;
+    public Item paperClip;
+    public Item paperClip2;
+
+    Item thisItem;
+    Item thisItem2;
+
+    bool hasDoubleClip = false;
+    public static bool hasChangedDoc1 = false;
+    public static bool hasChangedDoc2 = false;
 
     public List<Item> items = new List<Item>();
 
     public Item itemOnHand { get; private set; }
+
+    void Update()
+    {
+        if(ItemPickup.hasPaperclip == true && hasChangedDoc1 == false)
+        {
+            thisItem = docAndClip; 
+            thisItem.inspectGameObject = paperChange;
+            docAndClip = thisItem;
+            hasChangedDoc1 = true;
+        }
+
+        if(ItemPickup.hasPaperclip2 == true && hasChangedDoc2 == false)
+        {
+            thisItem2 = docAndClip2;
+            thisItem2.inspectGameObject = paperChange2;
+            docAndClip2 = thisItem2;
+            hasChangedDoc2 = true;
+        }
+
+        if(ItemPickup.hasPaperclip == true && ItemPickup.hasPaperclip2 == true && hasDoubleClip == false)
+        {
+            Add(doubleClip);
+            Remove(paperClip);
+            Remove(paperClip2);
+            hasDoubleClip = true;
+        }
+
+    }
 
     public void SetItemOnHand(Item item)
     {
@@ -38,7 +83,16 @@ public class Inventory : MonoBehaviour
 
     public bool Add(Item item)
     {
-        if(!item.isDefaultItem)
+        if (item.name == "Paperclip")
+        {
+            PC1 = true;
+        }
+        else if (item.name == "Paperclip2")
+        {
+            PC2 = true;
+        }
+
+        if (!item.isDefaultItem)
         {   
             if(items.Count >= space)
             {

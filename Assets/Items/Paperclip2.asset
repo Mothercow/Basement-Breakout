@@ -11,10 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb39af4ad2d5cca44bfdbef02636cb6f, type: 3}
   m_Name: Paperclip2
   m_EditorClassIdentifier: 
-  name: New Item
-  icon: {fileID: 0}
-  inspectGameObject: {fileID: 0}
+  name: Paperclip2
+  icon: {fileID: 21300000, guid: 249f6bc8f38b13543b34a2143a786005, type: 3}
+  inspectGameObject: {fileID: 1576780031647830, guid: 556f3d56c48947e469048fb38f122f66,
+    type: 2}
   isDefaultItem: 0
-  distance: 20
+  distance: 1
   itemIndex: 0
   hasSelectedItem: 0

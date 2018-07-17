@@ -5,7 +5,9 @@ public class ItemPickup : Interactable
     public Item item;
     MeshRenderer meshRenderer;
     BoxCollider boxCollider;
-    
+
+    public static bool hasPaperclip = false;
+    public static bool hasPaperclip2 = false;
 
     private void Start()
     {
@@ -13,9 +15,15 @@ public class ItemPickup : Interactable
         boxCollider = this.gameObject.GetComponent<BoxCollider>();
     }
 
+    private void Update()
+    {
+        Debug.Log(hasPaperclip);
+        Debug.Log(hasPaperclip2);
+    }
+
     public override void Interact()
     {
-        //GetComponent<DialogueTrigger>().TriggerDialogue();
+        GetComponent<DialogueTrigger>().TriggerDialogue();
         Debug.Log("Item pickup is happening");
         
         PickUp();
@@ -24,7 +32,18 @@ public class ItemPickup : Interactable
     void PickUp()
     {
         Debug.Log("Picking up " + item.name);
+        if(item.name == "Paperclip")
+        {
+            hasPaperclip = true;
+        }
+
+        if (item.name == "Paperclip2")
+        {
+            hasPaperclip2 = true;
+        }
         bool wasPickedUp = Inventory.instance.Add(item);
+
+        
 
         if(wasPickedUp)
         {

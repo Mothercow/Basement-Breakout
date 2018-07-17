@@ -8,6 +8,7 @@ public class SawCollision : MonoBehaviour
     public GameObject gasParticles;
     public GameObject hacksawAnim;
     public GameObject hacksawAnim2;
+    public GameObject pipeObject;
 
     public static bool hasAnimationEnded = false;
     public static bool startTimer = false;
@@ -32,6 +33,7 @@ public class SawCollision : MonoBehaviour
 
     private void Update()
     {
+
         if(startTimer == true)
         {
             if (timerAnimation > 0)
@@ -52,12 +54,16 @@ public class SawCollision : MonoBehaviour
         if (timerAnimation <= 0)
         {
             hasAnimationEnded = true;
+            timerAnimation = 3.0f;
+            startTimer = false;
             startTimer2 = true;
         }
 
         if (timerAnimation2 <= 0)
         {
             hasAnimationEnded2 = true;
+            timerAnimation2 = 3.0f;
+            startTimer2 = false;
         }
 
         if(hasAnimationEnded == true)
@@ -65,16 +71,18 @@ public class SawCollision : MonoBehaviour
             hacksawAnim.SetActive(false);
             hacksawAnim2.SetActive(true);
             sawAnimator2.enabled = true;
+            hasAnimationEnded = false;
         }
 
         if(hasAnimationEnded2 == true)
         {
             hacksawAnim2.SetActive(false);
-            this.GetComponent<Rigidbody>().useGravity = true;
-            this.GetComponent<Collider>().isTrigger = false;
-            this.GetComponent<ItemPickup>().enabled = true;
+            pipeObject.GetComponent<Rigidbody>().useGravity = true;
+            pipeObject.GetComponent<Collider>().isTrigger = false;
+            pipeObject.GetComponent<ItemPickup>().enabled = true;
             gasParticles.SetActive(true);
             gasStart = true;
+            hasAnimationEnded2 = false;
         }
     }
 
@@ -96,8 +104,7 @@ public class SawCollision : MonoBehaviour
             hacksawAnim.SetActive(true);
             sawAnimator.enabled = true;
             startTimer = true;
-            //sawAnimator.SetBool("IsContactWithPipe", true);
-            //Debug.Log("stuff");
+
         }
         else
         {

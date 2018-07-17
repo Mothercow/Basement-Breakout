@@ -58,6 +58,7 @@ GameObject:
   - component: {fileID: 95173430519310442}
   - component: {fileID: 65167000200721270}
   - component: {fileID: 114243344189709376}
+  - component: {fileID: 114461209154262156}
   m_Layer: 0
   m_Name: MagnifyingGlass
   m_TagString: Untagged
@@ -71,15 +72,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1778720316216628}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -103.70542, y: 24.426, z: 0.438}
+  m_LocalRotation: {x: 0.70532155, y: 0.05021554, z: -0.050215453, w: 0.7053215}
+  m_LocalPosition: {x: -99.79, y: 24.037, z: -1.191}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4981152587265356}
   - {fileID: 4768525640544128}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: -8.145}
 --- !u!4 &4768525640544128
 Transform:
   m_ObjectHideFlags: 1
@@ -247,6 +248,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sweetspot: {fileID: 1653924913208658, guid: 0f0c19facc79d3843beae45cd2bbc285, type: 2}
   magnifyingglass: {fileID: 1778720316216628}
+--- !u!114 &114461209154262156
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1778720316216628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3c6508669cdb6d478559ceb9b4d9d80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasInteracted: 0
+  selectedObject: {fileID: 0}
+  item: {fileID: 11400000, guid: c78a80db3dbfd414682f08c33672bdb7, type: 2}
 --- !u!114 &114819123489794826
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -259,5 +274,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sweetspot: {fileID: 1075809212315800, guid: 44d804c760562664f8e628bc9964ee80, type: 2}
-  feetrope: {fileID: 100002, guid: f48bb5979b12d9644ad9e0512797bdef, type: 3}
+  feetrope: {fileID: 1171189419360568, guid: f8dd1b6c19f4e814bbe171fa85e951a8, type: 2}
+  CamCon: {fileID: 0}
+  smoke: {fileID: 1696612095208932, guid: e66515aa3ed729b4799226f07b5a7237, type: 2}
+  TeleportationPads: {fileID: 1781819042506344, guid: 2ecff3a91f39546489693c0fa49cbb07,
+    type: 2}
+  thingstodestroy1: {fileID: 1075809212315800, guid: 44d804c760562664f8e628bc9964ee80,
+    type: 2}
+  thingstodestroy2: {fileID: 1653924913208658, guid: 0f0c19facc79d3843beae45cd2bbc285,
+    type: 2}
+  thingstodestroy3: {fileID: 1696612095208932, guid: e66515aa3ed729b4799226f07b5a7237,
+    type: 2}
+  thingstodestroy4: {fileID: 1171189419360568, guid: f8dd1b6c19f4e814bbe171fa85e951a8,
+    type: 2}
+  thingstodestroy5: {fileID: 1778720316216628}
   Seconds: 2

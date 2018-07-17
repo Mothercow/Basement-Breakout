@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: 0817d9aed56d1894381caf87e9f996a5
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bleach
+    100002: //RootNode
+    100004: motoroil
+    100006: oilbottle
+    100008: paintcan002
+    100010: thinner
+    400000: Bleach
+    400002: //RootNode
+    400004: motoroil
+    400006: oilbottle
+    400008: paintcan002
+    400010: thinner
+    2100000: 'Material #27'
+    2100002: 'Material #29'
+    2100004: 'Material #28'
+    2100006: 'Material #26'
+    2300000: Bleach
+    2300002: motoroil
+    2300004: oilbottle
+    2300006: paintcan002
+    2300008: thinner
+    3300000: Bleach
+    3300002: motoroil
+    3300004: oilbottle
+    3300006: paintcan002
+    3300008: thinner
+    4300000: Bleach
+    4300002: oilbottle
+    4300004: motoroil
+    4300006: paintcan002
+    4300008: thinner
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #26'
+    second: {fileID: 2100000, guid: 5ac451f2a9399b64285d8fc9d7e1cf80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #27'
+    second: {fileID: 2100000, guid: f1593c8e6af9f16408167be786eabda1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #28'
+    second: {fileID: 2100000, guid: db740853f5d2c7449acd77c825712af3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #29'
+    second: {fileID: 2100000, guid: b5037323d861f844898a0328176da049, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bleach(textured)
+    second: {fileID: 2800000, guid: 99af770271bf18c45adcbdc62ebaec47, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: motor oil(texture)
+    second: {fileID: 2800000, guid: b9e1de294321b43428a18e8c73496518, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: oil bottle(texture)
+    second: {fileID: 2800000, guid: 16a1ceb388d2ca2488166a61bcd9fc69, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: paint cans(textured)
+    second: {fileID: 2800000, guid: a3172a67c09c52f49b61237a5f4843e8, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -7,6 +7,7 @@ public class LockPickShake : MonoBehaviour
     public GameObject lockPick;
     public GameObject lockPickPivotRot;
     public GameObject wrenchPivot;
+    public GameObject winScreen;
     float shakenum = 1.0f;
     public static bool startShaking = false;
     public static bool isInCorrectArea = false;
@@ -44,14 +45,15 @@ public class LockPickShake : MonoBehaviour
             isInCorrectArea = false;
         }
 
-        if (tempWrenchRot > 180 && tempWrenchRot < 200)
+        if (tempWrenchRot > 90 && tempWrenchRot < 100)
         {
             Debug.Log("Unlocked");
+            winScreen.SetActive(true);
         }
 
         if(startShaking == true)
         {
-            Shake();
+            //Shake();
             Debug.Log("Shaking");
         }
         

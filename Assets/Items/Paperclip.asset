@@ -13,8 +13,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Paperclip
   icon: {fileID: 21300000, guid: 73a466987a60a7545b973c288991bc64, type: 3}
-  inspectGameObject: {fileID: 0}
+  inspectGameObject: {fileID: 1440427194006374, guid: c5b715edfb156f8459260b43196fdb99,
+    type: 2}
   isDefaultItem: 0
-  distance: 20
+  distance: 1
   itemIndex: 0
   hasSelectedItem: 0
